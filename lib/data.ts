@@ -40,7 +40,7 @@ export const experiencesData = [
   {
     title: "Full-Stack Developer Intern",
     location: "Kolkata, India",
-    description
+    description:
       "Worked as an intern at Millimeter Labs Pvt Ltd. Worked on the front-end and back-end of the company ecommerce website. Took part in code reviews and performed code documentations.",
     icon: React.createElement(FaReact),
     date: "Sep,2022-Dec,2022",
