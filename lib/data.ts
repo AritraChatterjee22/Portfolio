@@ -58,7 +58,7 @@ export const projectsData = [
   {
     title: "GptQuiz",
     description:
-      "Quiz platform for mcq and open-ended quiz built with OpenAI's API. Features include generating quiz game and analytics of performance on quiz at the end of it with time and accuracy. Also fetures history of previously generated quiz games.",
+      "A quiz platform utilizing OpenAI's API for both multiple-choice and open-ended quizzes, featuring quiz generation, performance analytics, and a history of past quizzes.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
     imageUrl: quiz,
   },
@@ -72,7 +72,7 @@ export const projectsData = [
   {
     title: "Uber Clone",
     description:
-      "The Uber Clone App is a React Native-based mobile app that mimics Uber's functions. It uses Google Maps and Distance API for real-time tracking and efficient routes. The user-friendly interface is designed with React Native and Tailwind CSS. Integrating Google APIs ensures accurate navigation. This project highlights my mobile app development skills and API integration expertise.",
+      "The Uber Clone App, built with React Native, seamlessly integrates Google Maps and Distance API for real-time tracking and efficient routes.",
     tags: ["React Native", "Tailwind", "Google-location API", "Google-Distance API", "Redux"],
     imageUrl: uber,
   },
