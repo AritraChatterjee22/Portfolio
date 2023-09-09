@@ -1,5 +1,5 @@
 "use client"
-import React, { createContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 import { links } from '@/lib/data'
 
 
@@ -14,7 +14,7 @@ type ActiveSectionContextType = {
     setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
   }
 
-  const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
+  export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
 
 export default function ActiveSectionContextProvider({children}: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>('Home')
@@ -28,3 +28,14 @@ export default function ActiveSectionContextProvider({children}: ActiveSectionCo
     </ActiveSectionContext.Provider>
   )
 }
+
+export function useActiveSectionContext() {
+    const context = useContext(ActiveSectionContext);
+
+    if(context === null){
+        throw new Error(
+        "useActiveSectionContext must be within a ActiveSectionContextProvider"
+        )
+      }
+      return context;
+  }
