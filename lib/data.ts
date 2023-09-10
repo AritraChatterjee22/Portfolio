@@ -93,4 +93,8 @@ export const skillsData = [
   "Redux",
   "Express",
   "Framer Motion",
+  "Docker",
+  "Mocha",
+  "Chai.js",
+  "Java(Core)"
 ] as const;
