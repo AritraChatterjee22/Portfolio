@@ -1,15 +1,18 @@
 "use client"
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import SectionHeading from './section-heading'
 import { projectsData } from '@/lib/data'
 import Project from './project'
-import { useInView } from 'react-intersection-observer'
-import { useActiveSectionContext } from '@/context/active-section-context'
-
+import {useSectionInView} from "@/lib/hooks"
 
 export default function Projects() {
 
-  const {ref, inView} = useInView({
+  const {ref} = useSectionInView("Projects", 0.4)
+  
+
+
+//replacing with custom hook
+{/*  const {ref, inView} = useInView({
       threshold: 0.4
     })
   const {setActiveSection, timeOfLastClick} = useActiveSectionContext()
@@ -18,7 +21,7 @@ export default function Projects() {
     if(inView && Date.now() - timeOfLastClick > 1000){
       setActiveSection("Projects")
     }
-  }, [inView, setActiveSection, timeOfLastClick])
+  }, [inView, setActiveSection, timeOfLastClick]) */}
 
 
 
