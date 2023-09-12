@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import {AiOutlineRead} from "react-icons/ai"
 import netflix from "@/public/netflix.png";
 import expense from "@/public/expense.webp";
 import portfolio from "@/public/port.png";
@@ -38,12 +39,31 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Intern Trainee",
+    location: "Remote, India",
+    description:
+      "Interned at Persistent Systems as a trainee learning and aquiring skills on Core Java,HTML,CSS,JavaScript",
+    icon: React.createElement(AiOutlineRead),
+    date: "Apr,2022-May,2022",
+    certificateLink: "https://drive.google.com/file/d/1sCfTLmNyeN5Pciy3M_U6TgB5U5HO5NiW/view?usp=drive_link"
+  },
+  {
     title: "Full-Stack Developer Intern",
     location: "Kolkata, India",
     description:
       "Worked as an intern at Millimeter Labs Pvt Ltd. Worked on the front-end and back-end of the company ecommerce website. Took part in code reviews and performed code documentations.",
     icon: React.createElement(FaReact),
     date: "Sep,2022-Dec,2022",
+    certificateLink: "https://drive.google.com/file/d/1b_IEDo78dFL0C5Vh8FZgLY1hG1L7uC8Y/view?usp=drive_link"
+  },
+  {
+    title: "Graduated Btech",
+    location: "Kolkata, India",
+    description:
+      "Graduated from Academy Of Technology in B.Tech with Computer Science Engineering with a CGPA of 8.84.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep,2019-July,2023",
+    certificateLink: "https://drive.google.com/file/d/1_6ehMjxP7j9hwCwBI22TvV7OYHJ-Hx81/view?usp=drive_link"
   },
 ] as const;
 
