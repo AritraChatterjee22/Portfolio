@@ -6,8 +6,10 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 
 export const sendEmail = async(formData: FormData) => {
-  const senderEmail = formData.get('email')
+  const senderEmail = formData.get('senderEmail')
   const message = formData.get('message')
+
+  console.log(senderEmail)
 
   //server side validation
   if(!validateString(senderEmail, 100)){
@@ -21,12 +23,15 @@ export const sendEmail = async(formData: FormData) => {
     }
   }
 
-
-  resend.emails.send({
-    from: 'onboarding@resend.dev',
-    to: 'chatterjee.aritra@protonmail.com',
-    subject: 'Message from Portfolio website',
-    reply_to: senderEmail as string,
-    text: message as string,
-  })
+  try {
+    await resend.emails.send({
+      from: 'Portfolio Contact Form<onboarding@resend.dev>',
+      to: 'chatterjee.aritra@protonmail.com',
+      subject: 'Message from Portfolio website',
+      reply_to: senderEmail as string,
+      text: message as string,
+    })
+  } catch (error) {
+      console.log(error)
+  }
 }
