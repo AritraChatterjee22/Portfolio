@@ -75,6 +75,7 @@ export const projectsData = [
       "Dummy Estate is a MERN stack real estate website featuring a custom REST API, JWT authentication with Google Auth, Firebase image storage, Redux state management, CRUD and search functionalities.",
     tags: ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
     imageUrl: estate,
+    project_link: "https://github.com/AritraChatterjee22/dummy-estate",
   },
   {
     title: "Nextflix Clone",
@@ -82,6 +83,7 @@ export const projectsData = [
       "Full stack Netflix Clone with Admin features and CRUD operations. Features a REST API built from scratch to provide movies and series in random.",
     tags: ["React.js", "Node.js", "MongoDB", "Express.js", "Material-UI"],
     imageUrl: netflix,
+    project_link: "https://github.com/AritraChatterjee22/netflix_clone",
   },
   {
     title: "GptQuiz",
@@ -89,6 +91,7 @@ export const projectsData = [
       "A quiz platform utilizing OpenAI's API for both multiple-choice and open-ended quizzes, featuring quiz generation, performance analytics, and a history of past quizzes.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
     imageUrl: quiz,
+    project_link: "https://github.com/AritraChatterjee22/gptquiz",
   },
   {
     title: "Expense Tracker",
@@ -96,6 +99,7 @@ export const projectsData = [
       "An analytics website to track personal finance with graph and history. Features CRUD operations on transactions visualized with pie graph and color coded history.",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind"],
     imageUrl: expense,
+    project_link: "https://github.com/AritraChatterjee22/Expense_Tracker_backend",
   },
   {
     title: "Uber Clone",
@@ -103,6 +107,7 @@ export const projectsData = [
       "The Uber Clone App, built with React Native, seamlessly integrates Google Maps and Distance API for real-time tracking and efficient routes.",
     tags: ["React Native", "Tailwind", "Google-location API", "Google-Distance API", "Redux"],
     imageUrl: uber,
+    project_link: "https://github.com/AritraChatterjee22/Uber-Clone-App",
   },
 ] as const;
 
