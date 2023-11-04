@@ -9,6 +9,7 @@ import portfolio from "@/public/port.png";
 import uber from "@/public/uber.png";
 import weather from "@/public/weather.webp";
 import quiz from "@/public/GptQuiz.jpg";
+import estate from "@/public/estate.png"
 
 export const links = [
   {
@@ -68,6 +69,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Dummy Estate",
+    description:
+      "Dummy Estate is a MERN stack real estate website featuring a custom REST API, JWT authentication with Google Auth, Firebase image storage, Redux state management, CRUD and search functionalities.",
+    tags: ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
+    imageUrl: estate,
+  },
   {
     title: "Nextflix Clone",
     description:
